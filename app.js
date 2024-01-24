@@ -7,7 +7,7 @@ const bodyParser = require('body-parser');
 const corsConfig = require('./server/middlewares/cors');
 const pgSession = require('connect-pg-simple')(session);
 
-const PORT = process.env.PORT || config.get(PORT);
+const PORT = process.env.PORT || config.get("PORT");
 const dotenv = require("dotenv");
 dotenv.config({
   override: true,
@@ -45,10 +45,14 @@ require("./server/routes/tasks/index.routes").configure(app);
 async function start() {
     try {
         connectDB();
-        server.listen(PORT, () => {
+        server.listen(5000, () => {
             console.info(`Server started on port: ${PORT}`);
         })
     }catch(e) {
         console.error('SERVER EXIT', e);
     }
 }
+
+start();
+
+module.exports = app
