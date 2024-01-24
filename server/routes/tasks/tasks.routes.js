@@ -7,7 +7,7 @@ router.post("/create", tasksController.create);
 router.get("/get", tasksController.get);
 router.get("/get/:id", tasksController.getById);
 
-router.put("/update/:id", tasksController.update);
+router.post("/update/:id", tasksController.update);
 
 router.delete("/delete/:id", tasksController.delete);
 

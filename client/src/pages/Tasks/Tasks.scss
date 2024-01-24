@@ -1,0 +1,54 @@
+p {
+    margin: 0;
+}
+.greenbg, .redbg {
+    display: inline-block;
+    padding: 6px;
+    margin-top: 10px;
+    border: 0;
+    border-radius: 10px;
+    transition: all ease .3s;
+}
+.greenbg{
+    background-color: rgba(66, 190, 66, 0.531);
+    &:hover{
+        box-shadow: 0px 0px 5px 3px rgba(77, 220, 77, 0.444);
+    }
+}
+.redbg{
+    background-color: rgba(190, 66, 66, 0.531);
+    &:hover{
+        box-shadow: 0px 0px 5px 3px rgba(227, 79, 79, 0.363);
+    }
+}
+.container__cards{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card__wrapper{
+    position: relative;
+    transition: all ease .3s;
+    margin: 20px ;
+    .action{
+        position: absolute;
+        right: 5px;
+        top: 5px;
+    }
+    &:hover{
+        transform: scale(1.1);
+    }
+}
+.link__item{
+    cursor: pointer;
+}
+.main__btn{
+    border: 0;
+    border-radius: 15px;
+    font-size: 20px;
+    padding: 10px;
+    background-color: rgb(231, 168, 91);
+    transition: all ease .3s;
+        &:hover{
+            box-shadow: 0px 0px 5px 3px rgba(210, 152, 80, 0.612);
+        }
+}

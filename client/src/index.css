@@ -6,8 +6,21 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+p{
+  margin: 0;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.container__page--main{
+  position: relative;
+  padding: 30px;
+}
+.link__item{
+  color: black;
+}
+.link__item:hover{
+  color: blue;
+  text-shadow: 4px 4px 4px blue;
 }
