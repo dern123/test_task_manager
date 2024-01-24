@@ -1,0 +1,6 @@
+{
+    "JWR_TOKEN": "Test",
+    "MainURL": "http://localhost:5000",
+    "PORT": 5000,
+    "PathToKeySSHLand": "config/ssh_lend_key.pem"
+}
