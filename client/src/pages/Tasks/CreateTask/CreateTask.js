@@ -99,16 +99,19 @@ const CreateTask = (props) => {
                 defaultValue={task ? task.description : ""}
                 onChange={changeInput}/>
             </Form.Group>
-            <Form.Select 
-                name='status'
-                aria-label="Default select example"
-                defaultValue={task ? task.status_id : ""}
-                onChange={changeInput}>
-                <option disabled>Status</option>
-                <option value="2">Not done</option>
-                <option value="1">Done</option>
-            </Form.Select>
-            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+            <Form.Group className="mb-3" controlId="exampleForm.ControlSelect1">
+              <Form.Label>Status</Form.Label>
+              <Form.Select 
+                  name='status'
+                  aria-label="Default select example"
+                  defaultValue={task ? task.status_id : ""}
+                  onChange={changeInput}>
+                  <option disabled>Status</option>
+                  <option value="2">Not done</option>
+                  <option value="1">Done</option>
+              </Form.Select>
+            </Form.Group>
+            <Form.Group className="mb-3" controlId="exampleForm.ControlInput2">
                 <Form.Label>Deadline</Form.Label>
                 <Form.Control 
                 name='deadline_date'
@@ -117,7 +120,7 @@ const CreateTask = (props) => {
                 defaultValue={task ? moment(task.deadline_date).month(1).format("YYYY-MM-DD") : dateNow}
                 onChange={changeInput}/>
             </Form.Group>
-            <Form.Group className="mb-3 mt-3" controlId="exampleForm.ControlTextarea1">
+            <Form.Group className="mb-3 mt-3" controlId="exampleForm.ControlBtn1">
                 <Button type='submit'>Save</Button>
             </Form.Group>
         </Form>
