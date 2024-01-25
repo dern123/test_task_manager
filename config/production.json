@@ -1,0 +1,6 @@
+{
+    "JWR_TOKEN": "Test",
+    "MainURL": "https://43x2uexmfx.eu-central-1.awsapprunner.com",
+    "PORT": 8080,
+    "PathToKeySSHLand": "config/ssh_lend_key.pem"
+}
