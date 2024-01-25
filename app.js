@@ -53,7 +53,7 @@ if(process.env.NODE_ENV === 'production'){
 async function start() {
     try {
         connectDB();
-        server.listen(5000, () => {
+        server.listen(PORT, () => {
             console.info(`Server started on port: ${PORT}`);
         })
     }catch(e) {
